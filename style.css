@@ -1,0 +1,1155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+/* universal selector start */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h2 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    color: black;
+}
+
+h4 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /* background-color: aqua; */
+}
+
+h5 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+}
+
+/* p {
+    font-size: 60px;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+    color: white;
+} */
+
+/* universal selector end   */
+
+/* home header section start */
+
+.headerchild2 h1 {
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 800px;
+    font-style: normal;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+
+
+.headerchild1 a:hover {
+    color: yellow;
+    /*Highlight effect */
+    /* transition: color 0.3s ease; */
+}
+
+.headerchild1 ul::selection {
+    background-color: violet;
+    /* Highlight background color */
+    color: orange;
+    /* Highlighted text color */
+    text-shadow: none;
+    /* Ensure no text shadow appears during selection */
+}
+
+
+.headerchild2 h2 {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    /* font-size: 90px; */
+    color: white;
+    text-align: center;
+    align-items: center;
+
+}
+
+.headermain {
+    background: url(./image/imggrp.png) no-repeat;
+    padding: 0px 0px 420px 0px;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .headermain {
+        background-size: contain;
+        /* Adjust background for smaller screens */
+        padding: 0 0 300px 0;
+        /* Reduce padding for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .headermain {
+        background-size: contain;
+        /* Ensure visibility on small screens */
+        padding: 0 0 100px 0;
+        /* Further reduce padding for mobile */
+    }
+}
+
+.headermainchild {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mklogo{
+    width: 70px;
+    height: 70px;
+    margin-left: -10px;
+}
+.headerchild1 ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 90px;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.headerchild1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.headerbutton {
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-family: "Fjalla One", sans-serif;
+    background-color: yellow;
+    /* Yellow top layer */
+    color: black;
+    /* Text color */
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    /* Remove underline */
+    padding: 10px 20px;
+    /* Button padding */
+    position: relative;
+    top: -15px;
+    border: none;
+    /* Remove borders */
+    cursor: pointer;
+
+
+}
+
+.headerbutton:hover {
+    transform: translate(-4px, -4px);
+    /* Slight lift on hover */
+}
+
+.clubimg {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.headerchild2 {
+    position: relative;
+    top: 200px;
+
+}
+
+.headerchild3 {
+    position: relative;
+    top: 350px;
+    left: 120px;
+    padding: 20px;
+    display: flex;
+    flex: wrap;
+    background-color: #484747;
+    color: white;
+    justify-content: space-evenly;
+    width: 85%;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+    gap: 40px;
+    border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    /* Tablet screens */
+    .headerchild3 {
+        top: 200px;
+        /* Adjust position */
+        left: 0;
+        /* Center horizontally */
+        width: 90%;
+        /* Adjust width */
+        font-size: 9px;
+        /* Reduce font size */
+        gap: 20px;
+        /* Reduce gap between elements */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Mobile screens */
+    .headerchild3 {
+        top: 200px;
+        /* Further adjust top position */
+        left: 0;
+        /* Align to center */
+        width: 95%;
+        /* Maximize width for small screens */
+        font-size: 8px;
+        /* Further reduce font size */
+        gap: 10px;
+        /* Minimal gap */
+        padding: 20px;
+        /* Increase padding for better spacing */
+        flex-direction: column;
+        /* Stack elements vertically */
+    }
+}
+
+.headerchild4 {
+    border-left: 1px solid white;
+    /* Divider between items */
+
+}
+
+.headerchild4:first-child {
+    border-left: none;
+    /* Remove the border for the first item */
+}
+
+.headerchild4_1 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.headerchild4_2 {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    color: whitesmoke;
+}
+
+.headerchild3 h3 {
+    padding: 2px 0px;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .headerchild2 h1 {
+        font-size: 10vw;
+        /* Adjust font size for tablets */
+    }
+
+    .headerchild2 h2 {
+        font-size: 6vw;
+        /* Adjust font size for tablets */
+    }
+
+    .headermain {
+        padding: 0 0 300px 0;
+        /* Adjust padding for smaller screens */
+    }
+
+    .headerchild1 ul {
+        flex-direction: row;
+        /* Stack menu items vertically */
+        gap: 20px;
+    }
+
+    .headerchild1 a {
+        font-size: 13px;
+        /* Adjust link size */
+    }
+
+    .headerbutton {
+        font-size: 1em;
+        /* Adjust button size */
+    }
+}
+
+@media (max-width: 480px) {
+    .headerchild2 h1 {
+        font-size: 12vw;
+        /* Adjust font size for small screens */
+    }
+
+    .headerchild2 h2 {
+        font-size: 8vw;
+        /* Adjust font size for small screens */
+    }
+
+    .headerchild1 ul {
+        gap: 10px;
+        /* Reduce gap for smaller screens */
+    }
+
+    .headerbutton {
+        top: 0;
+        /* Reset button position */
+        font-size: 0.9em;
+        /* Smaller button for mobile */
+    }
+}
+
+/* home header section end */
+
+/* CLUB ENVIRONMENTS start */
+.gridlayout {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    /* height: 100px; */
+    /* background-color: aqua; */
+}
+
+.club {
+    margin: 90px;
+    align-items: center;
+    text-align: center;
+}
+
+/* .clubchild{
+    height: 460px;
+    width: 300px;
+    background-color: #FCE53B;
+} */
+.clubmain {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.clubchild1:hover {
+    transform: translate(-4px, -4px);
+    /* Slight lift on hover */
+    /* box-shadow: 4px 4px 0px black; */
+    /* Adjust shadow on hover */
+}
+
+.clubchild1 {
+    background-color: #5C5A5A;
+    width: 280px;
+    height: 450px;
+    box-shadow: 20px 20px 0px #FCE53B;
+}
+
+.clubmain h3 {
+    font-size: 20px;
+    padding: 5px 20px 10px 20px ;
+    color: white;
+}
+
+/* CLUB ENVIRONMENTS end */
+
+/* welcome start */
+.welcome {
+    align-items: center;
+    text-align: center;
+    margin: 50px 0px;
+    /* background-color: aqua; */
+}
+
+.welcomechild1 {
+    padding: 50px 0px 30px 0px;
+}
+
+.button-container {
+    position: relative;
+    display: inline-block;
+    /* Ensures the container wraps around the button */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FCE53B;
+    /* Yellow top layer */
+    color: black;
+    /* Text color */
+    font-family: "Fjalla One", sans-serif;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    /* Remove underline */
+    padding: 10px 20px;
+    /* Button padding */
+    margin: 50px 0px;
+    position: relative;
+    border: none;
+    /* Remove borders */
+    cursor: pointer;
+    box-shadow: 10px 8px 0px black;
+    /* Creates the black shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional hover effect */
+.btn:hover {
+    transform: translate(-4px, -4px);
+    /* Slight lift on hover */
+    box-shadow: 4px 4px 0px black;
+    /* Adjust shadow on hover */
+}
+
+/* welcome end */
+
+/* <!-- category start --> */
+.category {
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    /* align-items: center;  */
+    /* text-align: center; */
+    gap: 50px;
+    /* background-color: aqua; */
+    padding: 90px 0px 0px 0px;
+}
+
+.category h2 {
+    margin: 50px 0px;
+}
+
+.categoryimg {
+    margin-left: 20px;
+    box-shadow: -20px -30px 0px #FCE53B;
+}
+
+/* <!-- category end --> */
+
+/* <!-- membership start --> */
+
+.membershipchild {
+    text-align: center;
+    align-items: center;
+}
+
+.membershipchild2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.membershipchild1 {
+    color: #BDBABA;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.membershipchild h4 {
+    position: relative;
+    left: 450px;
+    width: 400px;
+    margin: 20px 0px;
+}
+
+.membershipchild2 img {
+    margin: 40px 0px;
+    margin-left: 50px;
+    /* Replaced gap for spacing */
+    box-shadow: 20px 20px 0px #FCE53B;
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.membershipchild2 h5 {
+    margin: 30px 0px;
+    margin-left: 50px;
+}
+
+.membershipchild2 h4 {
+    margin: 10px 0px;
+    align-items: start;
+    text-align: start;
+    margin-left: 120px;
+}
+
+.membershipchild2 h4 {
+    margin: 10px 0px;
+    align-items: start;
+    text-align: start;
+    margin-left: 110px;
+}
+
+.membershipchild2 span {
+    color: #08F958;
+    margin: 0px 10px;
+}
+
+.membershipchild2 a {
+    margin-left: 50px;
+}
+
+
+/* <!-- membership end --> */
+
+/* <!-- category2 start --> */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px;
+    /* Optional: centers the image vertically */
+}
+
+.circle-image {
+    width: 200px;
+    /* Set the width of the image */
+    height: 200px;
+    /* Set the height of the image */
+    border-radius: 50%;
+    /* Makes the image a perfect circle */
+    object-fit: cover;
+    /* Ensures the image scales properly within the circle */
+    box-shadow: 20px -20px 0px #FCE53B;
+    margin: 0PX 60PX;
+}
+
+.circle-containerchild {
+    margin: 30px;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+/* <!-- category2 end --> */
+
+/* <!-- maplocation start --> */
+.homemap {
+    margin-bottom: 50px;
+}
+
+/* <!-- maplocation end --> */
+
+/* <!-- footer start --> */
+.footer {
+    background-color: #3B2E2E;
+    padding: 20px 10px;
+}
+
+.footermain {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.footermain h5 {
+    margin: 20px 0px;
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.footermain h2 {
+    margin: 10px 0px;
+    color: white;
+    font-weight: 500;
+    font-size: 25pxpx;
+}
+
+.footermain h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: normal;
+    padding: 10px 0px;
+}
+
+.footermain input {
+    font-weight: -100;
+    width: 280px;
+}
+
+.footerchild1 {
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.Copyrightimg {
+    position: relative;
+    top: 3px;
+    left: 10px;
+}
+
+/* <!-- footer end --> */
+
+/* <!-- aboutus header section start --> */
+
+.aboutus {
+    background: url(./image/aboutusimg.png) no-repeat;
+    padding: 0px 0px 300px 0px;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+
+    h2 {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 25px;
+        color: white;
+        margin: 30px 0px;
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.hun{
+    width: 490px;
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .aboutus {
+        background-size: contain;
+        /* Adjust background for smaller screens */
+        padding: 0 0 300px 0;
+        /* Reduce padding for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutus {
+        background-size: contain;
+        /* Ensure visibility on small screens */
+        padding: 0 0 100px 0;
+        /* Further reduce padding for mobile */
+    }
+}
+
+.aboutusbutton-container {
+    position: relative;
+    display: inline-block;
+    /* Ensures the container wraps around the button */
+    left: 560px;
+}
+
+.aboutusbtn {
+    display: inline-block;
+    background-color: #FCE53B;
+    /* Yellow top layer */
+    color: black;
+    /* Text color */
+    font-family: "Fjalla One", sans-serif;
+    font-style: normal;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    /* Remove underline */
+    padding: 10px 20px;
+    /* Button padding */
+    margin: 50px 0px;
+    position: relative;
+    border: none;
+    /* Remove borders */
+    cursor: pointer;
+    box-shadow: 10px 8px 0px white;
+    /* Creates the black shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional hover effect */
+.aboutusbtn:hover {
+    transform: translate(-4px, -4px);
+    /* Slight lift on hover */
+    box-shadow: 4px 4px 0px white;
+    /* Adjust shadow on hover */
+}
+
+/* <!-- aboutus header section end --> */
+
+/* <!-- aboutuscategory start --> */
+
+.categoryimg1 {
+    border: 15px solid #FCE53B;
+}
+
+/* <!-- aboutuscategory end --> */
+
+/* <!-- aboutuscategory2 start --> */
+
+.aboutuscategory2circle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.aboutuscategory2circlechild {
+    flex: 0 1 calc(33.33% - 30px);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.aboutuscategory2circle-image {
+    width: 200px;
+    /* Set the width of the image */
+    height: 200px;
+    /* Set the height of the image */
+    border-radius: 50%;
+    /* Makes the image a perfect circle */
+    object-fit: cover;
+    /* Ensures the image scales properly within the circle */
+    box-shadow: 20px -20px 0px #FCE53B;
+
+
+}
+
+.aboutuscategory2circle-containerchild {
+    margin: 30px;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+/* <!-- maplocation start --> */
+.aboutusmap {
+    margin-bottom: 50px;
+}
+
+/* <!-- maplocation end --> */
+
+/* ContactUs header section start */
+.contactus {
+    background: url(./image/contactusimg.png) no-repeat;
+    padding: 0px 0px 300px 0px;
+    background-size: cover;
+    width: auto;
+    height: auto;
+
+    h2 {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 25px;
+        color: white;
+        margin: 30px 0px;
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contactus {
+        background-size: contain;
+        /* Adjust background for smaller screens */
+        padding: 0 0 300px 0;
+        /* Reduce padding for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .contactus {
+        background-size: contain;
+        /* Ensure visibility on small screens */
+        padding: 0 0 100px 0;
+        /* Further reduce padding for mobile */
+    }
+}
+
+/* ContactUs header section end */
+
+/* <!-- MAKE CONTACT start --> */
+.makecontactmain {
+    display: flex;
+    padding: 50px 0px;
+    justify-content: space-between;
+
+}
+
+.makecontactchild {
+    /* background-color: #08F958; */
+}
+
+.makecontactchild1 {
+    padding-bottom: 45px;
+    width: 100%;
+}
+
+.makecontactchild2 {
+    padding-bottom: 45px;
+    width: 100%;
+}
+
+.form {
+    width: auto;
+    padding: auto;
+    margin: auto;
+    /* background-color: #FCE53B; */
+}
+
+.form input {
+    padding: 10px 50px 10px 10px;
+    margin: 0px 40px 20px 0px;
+    font-size: 15px;
+    /* color: black; */
+    outline: none;
+}
+
+.form textarea {
+    padding: 10px 135px 10px 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.contactusbutton-container {
+    position: relative;
+    display: inline-block;
+    /* Ensures the container wraps around the button */
+}
+
+.contactusbtn {
+    display: inline-block;
+    background-color: #FCE53B;
+    /* Yellow top layer */
+    color: black;
+    /* Text color */
+    font-family: "Fjalla One", sans-serif;
+    font-style: normal;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 300px;
+    /* Remove underline */
+    padding: 10px 20px;
+    /* Button padding */
+    margin: 50px 0px;
+    position: relative;
+    border: none;
+    /* Remove borders */
+    cursor: pointer;
+    box-shadow: 10px 8px 0px black;
+    /* Creates the black shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional hover effect */
+.contactusbtn:hover {
+    transform: translate(-4px, -4px);
+    /* Slight lift on hover */
+    box-shadow: 4px 4px 0px black;
+    /* Adjust shadow on hover */
+}
+
+/* <!-- MAKE CONTACT end --> */
+
+/* <!-- timing start --> */
+.timingmain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timingmain h4 {
+    padding: 20px 0px 0px 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.timingmain h2 {
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+/* <!-- timing end --> */
+
+/* <!-- Social media start--> */
+.socialmediamain {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 30px;
+}
+
+.socialmediachild {
+    display: flex;
+    gap: 10px;
+
+}
+
+/* <!-- Social media end--> */
+
+/* <!-- maplocation start --> */
+.contactusmap {
+    margin: 50px 0px;
+}
+
+/* <!-- maplocation end --> */
+
+/* <!-- footer start --> */
+.footer {
+    background-color: #3B2E2E;
+    padding: 20px 10px;
+}
+
+.footermain {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
+}
+
+.footermain h5 {
+    margin: 20px 0px;
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.footermain h2 {
+    margin: 10px 0px;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.footermain h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: normal;
+    padding: 10px 0px;
+}
+
+.footermain input {
+    font-weight: -100;
+    padding: 15px 10px;
+    width: 280px;
+}
+
+.footerchild1 {
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.Copyrightimg {
+    position: relative;
+    top: 3px;
+    left: 10px;
+}
+
+/* <!-- footer end --> */
+
+/* shop header section start */
+.shop {
+    background: url(./image/shopimggrp.png) no-repeat;
+    padding: 0px 0px 300px 0px;
+    background-size: cover;
+    width: auto;
+    height: auto;
+
+    h2 {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 25px;
+        color: white;
+        margin: 30px 0px;
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .shop {
+        background-size: contain;
+        /* Adjust background for smaller screens */
+        padding: 0 0 300px 0;
+        /* Reduce padding for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .shop {
+        background-size: contain;
+        /* Ensure visibility on small screens */
+        padding: 0 0 100px 0;
+        /* Further reduce padding for mobile */
+    }
+}
+
+.shopbutton-container {
+    position: relative;
+    display: inline-block;
+    /* Ensures the container wraps around the button */
+    left: 570px;
+}
+
+.shopbtn {
+    display: inline-block;
+    background-color: #FCE53B;
+    /* Yellow top layer */
+    color: black;
+    /* Text color */
+    font-family: "Fjalla One", sans-serif;
+    font-style: normal;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    /* Remove underline */
+    padding: 10px 20px;
+    /* Button padding */
+    margin: 50px 0px;
+    position: relative;
+    border: none;
+    /* Remove borders */
+    cursor: pointer;
+    box-shadow: 10px 8px 0px white;
+    /* Creates the black shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional hover effect */
+.shopbtn:hover {
+    transform: translate(-4px, -4px);
+    /* Slight lift on hover */
+    box-shadow: 4px 4px 0px white;
+    /* Adjust shadow on hover */
+}
+
+/* <!-- shop header section end --> */
+
+/* <!-- ourproduct start --> */
+
+.shopour {
+    align-items: center;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.shopourchild1 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.shopourchild2 {
+    font-size: 96px;
+    margin: 50px 0px;
+}
+
+.bgc {
+    background-color: #F5EFEF;
+}
+
+.productmain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.productname {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    color: black;
+}
+
+.productimg {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+
+
+.productchild1 {
+    flex: 0 1 calc(25% - 30px);
+    /* Four items per row with spacing adjustment */
+    margin: 30px 0;
+    /* Adjust vertical spacing */
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 15PX;
+}
+
+.productchild1:hover {
+    transform: translate(-4px, -4px);
+    /* Slight lift on hover */
+    box-shadow: 4px 4px 0px #FCE53B;
+    /* Adjust shadow on hover */
+}
+
+.productchild2 {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #D9D9D9; */
+
+}
+
+.productchild2 button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #D9D9D9;
+    border-color: antiquewhite;
+    border-radius: 5px;
+}
+
+.star {
+    color: #FCE53B;
+    font-size: 20px;
+
+}
+
+/* <!-- ourproduct end --> */
+
+.View {
+    align-items: center;
+    text-align: center;
+}
+
+.viewbtn {
+    padding: 20px 30px;
+    margin-bottom: 50px;
+    background-color: transparent;
+}
